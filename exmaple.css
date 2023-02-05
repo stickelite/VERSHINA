@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+body {
+    font-family:'Unbounded', cursive;
+    background-color: #6495ED;
+    background-image:url(IMAGE/pawel-nolbert-xe-ss5Tg2mo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    height:100vh;
+    width: 100%;
+}
+.logo {
+    text-align: center;
+    margin-top:50px;
+    
+}
+.container {
+    width:100%;
+    display: flex;
+}
+.block { 
+    background-color: white;
+    height: 550px;
+    display:block;
+    margin:5px;
+    margin-top:10px;
+    flex:1;
+    border-radius: 20px;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    transition:all 0.5s ease-in-out;
+}
+.block h3{
+    position: relative;
+    padding:200px 30px;
+    text-align: left;
+    font-weight: bold;
+    font-size:20px;
+    color:rgb(216, 207, 207);
+    opacity:0;
+}
+.block.active {
+    flex:2;
+    transition: .9s;
+    transition-delay: 0.1s;
+}
+.block.active h3{
+    opacity:1;
+    transition:opacity 0.9s ease-in 0.3s;
+}
+
